@@ -38,6 +38,6 @@ goal(done, t) :-
 
 Need to install [spinningup](https://spinningup.openai.com/en/latest/) and gym-lass first. See [spinningup docs](https://spinningup.openai.com/en/latest/user/running.html#launching-from-scripts) for how to run them.
 
-### Random
+### Random baseline
 
 Need to install gym-lass first.
