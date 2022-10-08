@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<OpenSCENARIO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceShemaLocation="./openscenario_1.1.1.xsd">
+  <FileHeader author="Violin Wang" date="2022-05-07T12:00:00" description="asp-gen template" revMajor="1" revMinor="0"/>
+  <ParameterDeclarations />
+  <CatalogLocations>
+    <VehicleCatalog>
+      <Directory path="../resources/xosc/Vehicles"/>
+    </VehicleCatalog>
+    <ManeuverCatalog>
+      <Directory path="../resources/xosc/Maneuvers"/>
+    </ManeuverCatalog>
+  </CatalogLocations>
+  <RoadNetwork>
+    <LogicFile filepath="../resources/xodr/highway.xodr"/>
+  </RoadNetwork>
+  <Entities>
+    <!-- Vehicles -->
+  </Entities>
+  <Storyboard>
+    <Init>
+      <Actions>
+        <!-- Init actions -->
+      </Actions>
+    </Init>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition conditionEdge="rising" delay="1" name="stop_simulation">
+          <ByValueCondition>
+            <SimulationTimeCondition rule="greaterThan" value="$exec_time"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>

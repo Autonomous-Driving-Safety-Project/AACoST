@@ -1,2 +1,1 @@
-# ACSG
-Avoidable Collision Scenario Generator
+# ACSG: Avoidable Collision Scenario Generator for Autonomous Vehicles
